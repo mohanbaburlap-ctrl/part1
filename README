@@ -1,0 +1,132 @@
+readme = """
+# TrendPulse - Part 3
+## Visualization, EDA and Business Thinking
+
+### Project Overview
+
+This project analyzes YouTube Trending Video Statistics
+from multiple countries using Python.
+
+The objective is to understand category performance,
+video views, likes, engagement, trending lifespan,
+correlations and content strategy.
+
+### Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Plotly
+- Google Colab
+
+### Folder Structure
+
+part3_visualization_eda/
+    data/
+    notebooks/
+    charts/
+    README.md
+
+### Installation
+
+Install required libraries:
+
+pip install pandas numpy matplotlib seaborn plotly
+
+### How to Run
+
+1. Open Google Colab.
+2. Upload the Part 3 data files.
+3. Open trendpulse_part3.ipynb.
+4. Run all notebook cells in order.
+5. Check the charts folder for saved visualizations.
+
+### Data Profiling and Cleaning
+
+Document the initial and final dataset shape,
+missing-value percentages, data types,
+duplicate removal and other cleaning steps here.
+
+### Matplotlib Visualizations
+
+1. Trending records by category
+2. Distribution of video views
+3. Views versus likes
+4. Trending records over time
+5. Views distribution by category
+
+Add the interpretation and chart-type justification
+under every chart.
+
+### Interactive Visualizations
+
+1. Interactive views versus likes
+2. Average views by country and category
+
+Add the interpretation for each chart here.
+
+### Distributions and Outliers
+
+Report the mean, median and mode for views and likes.
+
+Explain the skewness of both distributions.
+
+Report the IQR outlier counts and explain
+why the outliers were retained or removed.
+
+### Correlation Analysis
+
+Include the two strongest correlations,
+their coefficients and interpretations.
+
+Explain why correlation does not prove causation.
+
+### Funnel Analysis
+
+Include the four funnel stages,
+counts and conversion rates.
+
+Explain the largest drop-off.
+
+### Retention Analysis
+
+Report retention percentages for Days 2, 3, 5 and 7.
+
+Include the retention curve and category comparison.
+
+### Cohort Analysis
+
+Compare average trending lifespan by first-trending week.
+Discuss differences and cohort sizes.
+
+### Content Strategy Briefing
+
+Paste the completed 5-8 sentence business briefing here.
+
+### Limitation
+
+This dataset contains only videos that appeared
+on the trending list during the observed period.
+It does not include videos that never trended.
+"""
+
+os.makedirs(
+    "part3_visualization_eda/charts",
+    exist_ok=True
+)
+
+os.makedirs(
+    "part3_visualization_eda/notebooks",
+    exist_ok=True
+)
+
+with open(
+    "part3_visualization_eda/README.md",
+    "w"
+) as file:
+
+    file.write(readme)
+
+print("README created successfully!")
